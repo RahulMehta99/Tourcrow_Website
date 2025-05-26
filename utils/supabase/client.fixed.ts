@@ -2,8 +2,8 @@ import { createClient } from "@supabase/supabase-js"
 import type { Trip } from "@/types/trips"
 
 // Create a single supabase client for the browser
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+const supabaseUrl = "https://qcxhitelibenzdgbefkh.supabase.co"
+const supabaseAnonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFjeGhpdGVsaWJlbnpkZ2JlZmtoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM4NzEzMTAsImV4cCI6MjA1OTQ0NzMxMH0.5Tf9YJJ1NUz7YOkfsJrJTsrYdQJzQzAWjx-de-qjrhQ"
 export const supabase = createClient(supabaseUrl, supabaseAnonKey)
 
 export async function getTrips(
